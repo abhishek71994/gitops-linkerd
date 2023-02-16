@@ -5,9 +5,6 @@ metadata:
   name: ingress-nginx
 spec:
   interval: 30m
-  wait: true # wait for all applied resources to become ready
-  timeout: 3m0s # give up waiting after three minutes
-  retryInterval: 2m0s # retry every two minutes on apply or waiting failures
   chart:
     spec:
       chart: ingress-nginx
